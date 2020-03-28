@@ -8,7 +8,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" type="text/css" href="/static/product.css"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='product.css') }}"> 
         
       
         <title>Dmitry Bandurin</title>
@@ -49,9 +49,10 @@
           <a class="py-2" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
           </a>
-          <a class="py-2 d-none d-md-inline-block" href="#section1">Tour</a>
-           <a class="py-2 d-none d-md-inline-block" href="/blog.html"> Solutions </a> 
-          <a class="py-2 d-none d-md-inline-block" href="/test.html">About Us</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Solutions</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
+          <a class="py-2 d-none d-md-inline-block" href="#">About Us</a>
         </div>
       </nav>
 
@@ -104,108 +105,89 @@
 
       </div>
 
-      <section id="section1">
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-dark mr-md-3 pt-1 px-1 pt-md-1 px-md-1 text-center text-white overflow-hidden">
+          <div class="my-3 py-1">
+            <h2 class="display-7">Machine Learning </h2>
+          </div>
+        </div>
+        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center text-white overflow-hidden">
+          <div class="my-3 py-1">
+            <h2 class="display-7">Data Visualization</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center overflow-hidden">
+            <div class="my-3 py-1">
+              <h2 class="display-7">Optimization problems</h2>
+            </div>
+          </div>
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center overflow-hidden">
+            <div class="my-3 py-1">
+              <h2 class="display-7">Recommendation systems</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-1 pl-md-1">
+            <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center text-white overflow-hidden">
+              <div class="my-3 p-1">
+                <h2 class="display-7">Customer Analytics</h2>      
+              </div>
+            </div>
+            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center text-white  overflow-hidden">
+              <div class="my-3 py-1">
+                <h2 class="display-7">Textual Analytics </h2>
+              </div>
+            </div>
+          </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center  overflow-hidden">
+          <div class="my-3 p-1">
+            <h2 class="display-7">Image Analytics</h2>
+          </div>
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center overflow-hidden">
+          <div class="my-3 py-1">
+            <h2 class="display-7">Feature Analysis</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+          <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center text-white overflow-hidden">
+            <div class="my-3 p-1">
+              <h2 class="display-7"> E-commerce </h2>
+            </div>
+          </div>
+          <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-1 px-md-1 text-center text-white overflow-hidden">
+            <div class="my-3 py-1">
+              <h2 class="display-7">Computational Advertising </h2>
+            </div>
+          </div>
+        </div>
 
         <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-          <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
-              <h2 class="display-5">Machine Learning</h2>
+              <h2 class="display-5">Test</h2>
               <p class="lead">With over 15 years of experience developing machine learning systems, 
                 we are familiar pretty well with a wide variety of methods..</p>
             </div>
             <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
           </div>
-          <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3">
-              <h2 class="display-5">Data Visualization</h2>
-              <p class="lead">Using most efficient tools existing on a market, we help you see your
-                              data and create reporting pipeline.</p>
+              <h2 class="display-5">plot</h2>
+              <img src="../static/violin_ensemble.jpg"  width="100%" height="100%"  
+                   text="text tttt" title="title TTTT ">
             </div>
             <!-- <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
           </div>
         </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-              <h2 class="display-5">Optimization problems</h2>
-              <p class="lead">We will turn your business problems into data modeling and 
-                mathematical optimization problem. Together with you we hope to find ways how 
-                to maximize performance on your key metrics with same dollar amount spend.</p>
-            </div>
-            <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-          </div>
-          <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 py-3">
-              <h2 class="display-5">Recommendation systems</h2>
-              <p class="lead">Recommendation systems help find best match between content of your goods 
-                and/or services and your customers needs and rank them to maximize your performance. 
-                Having experience in wide spectrum of business cases, and using your data, 
-                we hope to find best
-                recommendation system for your needs.</p>
-            </div>
-            <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-          </div>
-        </div>
-
-        <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-            <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-              <div class="my-3 p-3">
-                <h2 class="display-5">Customer Analytics</h2>
-                <ul style="list-style-type:square" class="text-left">
-                    <li>Customer Lifetime Value</li>
-                    <li>Churn ananlysis</li>
-                    <li>Fraud Detection</li>
-                    <li>Website Analytics</li>
-                </ul>
-                
-              </div>
-              <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-            </div>
-            <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white  overflow-hidden">
-              <div class="my-3 py-3">
-                <h2 class="display-5">Textual Analytics </h2>
-                <ul style="list-style-type:square" class="text-left">
-                    Analyzing documents for classification, concept extraction or automatic summarization 
-                    can be challenging. We have experience with TFIDF, mutual information criterion, 
-                    summarization, feature reduction, and other advanced statistical methods.
-                    <li>Text modeling and classification</li>
-                    <li>Semantic analysis</li>
-                    <li>Finding similar documents</li>
-                    <li>Text summarization</li>
-                    <li>Web scrapping</li>
-                </ul>
-              </div>
-              <!-- <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-            </div>
-          </div>
-
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center  overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Image Analytics</h2>
-            <ul style="list-style-type:square" class="text-left">
-                <li>Object recognition and image classification</li>
-                <li>Face detection and facial expression detection (e.g. for detecting the drowsiness of a driver and providing an automated alert)</li>
-                <li>Extracting textual and numeric data from images (eg. license plates, handwritten addresses, etc)</li>
-                <li>Semantic segmentation of videos (This solution will help the customers to detect and segment different kinds of objects from a streaming video).</li>
-            </ul>
-          </div>
-          <!-- <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-        </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Feature Analysis</h2>
-            <p class="lead">Data may contain a lot of features that are either redundant or irrelevant, 
-              and can thus be removed without incurring much loss of information.
-              We will analyze your data and help choose most important features 
-              that help reach your goal.</p>
-          </div>
-          <!-- <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div> -->
-        </div>
-      </div>
-
-      </section>
 
 
       <footer class="container py-5">

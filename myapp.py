@@ -8,22 +8,29 @@ def index():
     print('Index called')
     return render_template('home_product.html')
 
-@app.route("/blog.html", methods=['GET', 'POST'])
-def blog():
+@app.route("/pred_repair", methods=['GET', 'POST'])
+def pred_repair():
     print('Solutions called, request.method = ',request.method)
-    # if request.method == 'POST':
-    #     return redirect(url_for('index'))
-    return render_template('blog.html')
+    return render_template('predictive_repair.html')
 
-@app.route("/test.html", methods=['GET', 'POST'])
-def test_dashboard():
+@app.route("/supply_chain", methods=['GET', 'POST'])
+def supply_chain():
+    print('Solutions called, request.method = ',request.method)
+    return render_template('supply_chain.html')
+
+@app.route("/dashboards", methods=['GET', 'POST'])
+def dashboards():
     print('Solutions called, request.method = ',request.method)
     # if request.method == 'POST':
     #     return redirect(url_for('index'))
     
     # #else:
     # #Dashboard
-    return render_template('test.html')
+    return render_template('dashboards.html')
+
+@app.route("/about_us", methods=['GET', 'POST'])
+def about_us():
+    return render_template('about_us.html')
 
 if __name__ == '__main__':
     app.run(port=5001, debug=True)

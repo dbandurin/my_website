@@ -32,5 +32,9 @@ def dashboards():
 def about_us():
     return render_template('about_us.html')
 
+@app.route("/contact_us", methods=['GET', 'POST'])
+def contact_us():
+    return render_template('contact_us.html')
+
 if __name__ == '__main__':
     app.run(port=5001, debug=True)

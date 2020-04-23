@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block content %}
+
+<center>
+    <h1>Contact Us</h1>
+    <h6>Please reach out using the form below and we will be in touch soon.</h6>
+</center>
+
+<br><br>
+
+<form padding="100px" background="#777" width="250px">
+    <div class="form-row">
+      <div class="col-md-5 mb-2">
+        <label for="validationDefault01">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+      </div>
+      <div class="col-md-5 mb-2">
+        <label for="validationDefault02">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-5 mb-3">
+        <label for="validationDefault03">Organization</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Organization" required>
+      </div>
+      <div class="col-md-5 mb-3">
+        <label for="validationDefault04">E-mail</label>
+        <input type="text" class="form-control" id="validationDefault04" placeholder="xxx@yyy.zzz" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Phone</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="type your phone" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+
+
+
+{% endblock %}

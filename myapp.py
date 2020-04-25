@@ -18,6 +18,11 @@ def supply_chain():
     print('Solutions called, request.method = ',request.method)
     return render_template('supply_chain.html')
 
+@app.route("/document", methods=['GET', 'POST'])
+def document():
+    print('Documents called, request.method = ',request.method)
+    return render_template('document.html')
+
 @app.route("/dashboards", methods=['GET', 'POST'])
 def dashboards():
     print('Solutions called, request.method = ',request.method)

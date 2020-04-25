@@ -1,0 +1,145 @@
+
+{% extends "base.html"%}
+{% block content %}
+
+<div class="container">
+  <header class="blog-header py-3">
+        <h1 align="center">Document Analytics</h1>
+  </header>
+
+  <div class="nav-scroller py-0 mb-8">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#overview">Overview</a>
+      <a class="p-2 text-muted" href="#section2">Architecture</a>
+      <a class="p-2 text-muted" href="#section3">Features</a>
+      <a class="p-2 text-muted" href="#section4">Key benefits</a>
+
+    </nav>
+  </div>
+
+  <h3 class="pb-2 mb-8 font-italic border-bottom">
+    <!-- From the Firehose -->
+  </h3>
+
+</div>
+
+<main role="main" class="container">
+
+  <div class="row">
+    <div class="col-md-12 blog-main">
+
+      <div class="blog-post">
+        <a name="overview"></a>
+        <h3 class="blog-post-title">1. Overview.</h3>
+
+        <p>
+          In recent years, OCR (Optical Character Recognition) technology has been applied throughout 
+          the entire spectrum of industries, revolutionizing the document management process. 
+          OCR has enabled scanned documents to become more than just image files, turning into fully 
+          searchable documents with text content that is recognized by computers. With the help of OCR, 
+          people no longer need to manually retype important documents when entering them into electronic 
+          databases. Instead, OCR extracts relevant information and enters it automatically. 
+          The result is accurate, efficient information processing in less time.
+        </p>
+
+        <p>
+          By integrating AI and Machine Learning based technologies, a number of important business 
+          problems can be solved very effectively without human intervention.  They include scanning of 
+          boxes of documents and storing retrieved textual and numeric data them in database. 
+          It allows to effectively keep track of records, simplifies data collection and following analyses.
+        </p>
+
+        <p>
+        Goals of Document solution:
+        <ol>
+        <li>AI based integrated solution to extract textual and numeric information from PDF and image 
+          files in the form of text and present this information in a convenient (e.g. tabular) format.</li>
+        <li>Organize storage of this information in database for following  quick search and extraction.</li>
+        <li>Textual analytics: document summarization, classification, finding similar documents, 
+            named entity recognition, etc., using Natural Language Processing.</li>
+        </ol>
+        </p>
+
+      </div>
+
+      <br><br>
+      <div class="blog-post">
+        <a name="section1"></a>
+        <h3 class="blog-post-subtitle">2. Architecture.</h3>
+
+        Possible architecture for this solution is shown in Figure 1.
+
+        <center>
+          <img src="../static/Plots/Document/schema.png"  
+          class="center" width="70%" height="70%" >
+          <h6>Figure 1: Basic architecture of the end-to-end application.</h6>
+        </center>
+        <br>                                       
+
+        Example of implemented solution with document storage and search is shown in Figure 2. 
+        <br><br>
+        <center>
+          <img src="../static/Plots/Document/doc_search.png" width="70%" height="70%">
+          <h6>Figure 2: Example of document search.</h6>
+        </center>
+
+  
+
+      <br><br>
+      <div class="blog-post">
+        <a name="section1"></a>
+        <h3 class="blog-post-subtitle">3. Features.</h3>
+        
+        <b> Quick and effective digitization of paper documents.</b>
+        <br>
+        Xen Document360.AI solution allows to convert tons of paper documents of various formats to digit, 
+        and makes them available online. It saves money used for paper storage and text replication.
+        <br><br>
+        <b>Documents storage for fast access.</b>
+        <br>
+        Use of modern document databases allows to store countless texts and then quickly access them using topics, 
+        keywords, etc. It will dramatically reduce time for finding a required information.
+        <br><br>
+        <b>Insight generation.</b>
+        <br>
+        Xen Document360.AI allows to effectively group and then summarize information stored in documents. 
+        It may significantly boost business efficiency.
+        <br>
+        
+      </div>
+
+      <br><br>
+      <div class="blog-post">
+        <a name="section1"></a>
+        <h3 class="blog-post-subtitle">4. Key benefits.</h3>
+        The suggested solution can be helpful in many fields, for example, education, healthcare, finance, and 
+        government agencies. Possible positive outcomes include: 
+        <br>
+        <ul>
+         <li>Countless paper documents would be converted to digit and be available online.</li>
+         <li>In education, it will save money for students and allow knowledge to be shared. </li>
+         <li>For many businesses, one can easily keep track of all financial records. </li>
+         <li>In government, legal, healthcare agencies, it simplifies data collection and their future analysis, 
+           among other processes.</li>
+         <li>Overall, it maximizes a business performance, and significantly boosts efficiency of the information 
+           accumulated in those documents.</li>
+        </ul>
+        
+      </div>
+
+
+    </div><!-- /.blog-main -->
+
+  </div> <!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by 
+    <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p> -->
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+{% endblock %}

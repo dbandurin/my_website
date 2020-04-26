@@ -23,6 +23,11 @@ def document():
     print('Documents called, request.method = ',request.method)
     return render_template('document.html')
 
+@app.route("/ecom", methods=['GET', 'POST'])
+def ecom():
+    print('ECom called, request.method = ',request.method)
+    return render_template('ecom.html')
+
 @app.route("/dashboards", methods=['GET', 'POST'])
 def dashboards():
     print('Solutions called, request.method = ',request.method)

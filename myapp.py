@@ -18,6 +18,11 @@ def supply_chain():
     print('Solutions called, request.method = ',request.method)
     return render_template('supply_chain.html')
 
+@app.route("/logistics", methods=['GET', 'POST'])
+def logistics():
+    print('Solutions called, request.method = ',request.method)
+    return render_template('logistics.html')
+
 @app.route("/document", methods=['GET', 'POST'])
 def document():
     print('Documents called, request.method = ',request.method)
@@ -37,6 +42,10 @@ def dashboards():
     # #else:
     # #Dashboard
     return render_template('dashboards.html')
+
+@app.route("/blogs", methods=['GET', 'POST'])
+def blogs():
+    return render_template('blogs.html')
 
 @app.route("/about_us", methods=['GET', 'POST'])
 def about_us():

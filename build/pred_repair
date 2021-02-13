@@ -1,10 +1,50 @@
 
-{% extends "base.html"%}
-{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="/static/product.css"> 
+        
+      
+        <title>Data Science for Business</title>
+
+    </head>
+
+    <body>
+
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
+          <a class="py-2 d-none d-md-inline-block" href="/#section_main">Tour</a>
+          <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+               aria-haspopup="true" aria-expanded="false">Our Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/pred_repair">Predictive Repairs</a>
+              <a class="dropdown-item" href="/supply_chain">Supply Chain</a>
+              <a class="dropdown-item" href="/document">Document</a>
+              <a class="dropdown-item" href="/ecom">E-Commerce</a>
+            </div>
+          <!-- </li> -->
+          <a class="py-2 d-none d-md-inline-block" href="/dashboards">Dashboards</a>
+          <a class="py-2 d-none d-md-inline-block" href="/about_us">About Us</a>
+        </div>
+      </nav>
+
+      
 
 <div class="container">
   <header class="blog-header py-3">
-        <h1 align="center">Supply Chain</h1>
+        <h1 align="center">Predictive Maintenance and Repair</h1>
   </header>
 
   <div class="nav-scroller py-0 mb-8">
@@ -31,7 +71,7 @@
 
       <div class="blog-post">
         <a name="overview"></a>
-        <h3 class="blog-post-title">1. Overview</h3>
+        <h3 class="blog-post-title">Overview</h3>
 
         <p>
           Every company has a challenge of matching its supply volume to a customer demand. 
@@ -73,7 +113,7 @@
         </p>  
         <center>
           <img src="../static/Plots/SupplyChain/data-science-for-inventory-optimization-01.png"  
-          class="center" width="80%" >
+          class="center" width="50%" height="50%" >
           <h6>Figure 1: Supply Chain.</h6>
         </center>
         <br>
@@ -93,7 +133,7 @@
       <br><br>
       <div class="blog-post">
         <a name="section1"></a>
-        <h3 class="blog-post-subtitle">2. Forecasting demand</h3>
+        <h3 class="blog-post-subtitle">1. Forecasting demand.</h3>
         
         <p>
           In this problem, we need to predict optimal number of stock-keeping units (SKUs) we should 
@@ -140,7 +180,7 @@
       <div class="blog-post">
         <a name="section2"></a>
         <br>
-        <h3 class="blog-post-title">3.	Multi-echelon inventory optimization</h3>
+        <h3 class="blog-post-title">2.	Multi-echelon inventory optimization.</h3>
           <p>
             In many cases, a supply chain has a complex structure with multiple facilities with a sequential 
             supply structure, i.e. has a few echelons. Figure 4 illustrates an example of such multi-echelon 
@@ -177,7 +217,7 @@
       <br>
       <div class="blog-post">
         <a name="section3"></a>
-        <h3 class="blog-post-title">4.	Price optimization</h3>
+        <h3 class="blog-post-title">3.	Price optimization</h3>
 
         <p>
           Here are some of the crucial questions that retailers recurrently face:
@@ -245,8 +285,7 @@
       <div class="blog-post">
 
         <a name="section4"></a>
-        <h2 class="blog-post-title">5. Managing logistical relationship between the supply chain 
-          nodes</h2>
+        <h2 class="blog-post-title">4. Managing logistical relationship between the supply chain nodes.</h2>
         
         <p>
           Supply chains are inherently complex and can be modeled and clustered in several different ways. In order to model and understand supply chains better, many  sources refer to modern supply chains as networks. Therefore, it is a perfect environment to apply modern graphical data bases to help us resolve many supply chain network challenges.
@@ -313,4 +352,7 @@
   </p>
 </footer>
 
-{% endblock %}
+
+
+    <body>
+</html>

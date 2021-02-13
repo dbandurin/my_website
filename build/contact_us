@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="/static/product.css"> 
+        
+      
+        <title>Data Science for Business</title>
+
+    </head>
+
+    <body>
+
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
+          <a class="py-2 d-none d-md-inline-block" href="/#section_main">Tour</a>
+          <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+               aria-haspopup="true" aria-expanded="false">Our Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/pred_repair">Predictive Repairs</a>
+              <a class="dropdown-item" href="/supply_chain">Supply Chain</a>
+              <a class="dropdown-item" href="/document">Document</a>
+              <a class="dropdown-item" href="/ecom">E-Commerce</a>
+            </div>
+          <!-- </li> -->
+          <a class="py-2 d-none d-md-inline-block" href="/dashboards">Dashboards</a>
+          <a class="py-2 d-none d-md-inline-block" href="/about_us">About Us</a>
+        </div>
+      </nav>
+
+      
+
+<center>
+    <h1>Contact Us</h1>
+    <h6>Please reach out using the form below and we will be in touch soon.</h6>
+</center>
+
+<br><br>
+
+<form padding="100px" background="#777" width="250px">
+    <div class="form-row">
+      <div class="col-md-5 mb-2">
+        <label for="validationDefault01">First name</label>
+        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+      </div>
+      <div class="col-md-5 mb-2">
+        <label for="validationDefault02">Last name</label>
+        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="col-md-5 mb-3">
+        <label for="validationDefault03">Organization</label>
+        <input type="text" class="form-control" id="validationDefault03" placeholder="Organization" required>
+      </div>
+      <div class="col-md-5 mb-3">
+        <label for="validationDefault04">E-mail</label>
+        <input type="text" class="form-control" id="validationDefault04" placeholder="xxx@yyy.zzz" required>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Phone</label>
+        <input type="text" class="form-control" id="validationDefault05" placeholder="type your phone" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+        <label class="form-check-label" for="invalidCheck2">
+          Agree to terms and conditions
+        </label>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+
+
+
+
+
+    <body>
+</html>

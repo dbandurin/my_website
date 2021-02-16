@@ -23,15 +23,20 @@ def logistics():
     print('Solutions called, request.method = ',request.method)
     return render_template('logistics.html')
 
-@app.route("/document", methods=['GET', 'POST'])
-def document():
-    print('Documents called, request.method = ',request.method)
-    return render_template('document.html')
+@app.route("/iiot", methods=['GET', 'POST'])
+def iiot():
+    print('Solutions called, request.method = ',request.method)
+    return render_template('iiot.html')
 
-@app.route("/ecom", methods=['GET', 'POST'])
-def ecom():
-    print('ECom called, request.method = ',request.method)
-    return render_template('ecom.html')
+# @app.route("/document", methods=['GET', 'POST'])
+# def document():
+#     print('Documents called, request.method = ',request.method)
+#     return render_template('document.html')
+
+# @app.route("/ecom", methods=['GET', 'POST'])
+# def ecom():
+#     print('ECom called, request.method = ',request.method)
+#     return render_template('ecom.html')
 
 @app.route("/dashboards", methods=['GET', 'POST'])
 def dashboards():

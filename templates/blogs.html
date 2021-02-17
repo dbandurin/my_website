@@ -1,9 +1,6 @@
 
 {% extends "base.html"%}
 {% block content %}
-
-<br>
-<p>Our blogs.</p>
      
 <div class="container">
     <header class="blog-header py-3">
@@ -52,14 +49,14 @@
     <div class="col-md-8 blog-main">
 
       <h3 class="pb-4 mb-8 font-italic border-bottom">
-        From the Firehose
+        Recent posts
       </h3>
 
       <div class="blog-post">
         <a name="blog1"></a>
 
-        <h2 class="blog-post-title">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+        <h2 class="blog-post-title">Digital twins in Supply Chain</h2>
+        <p class="blog-post-meta">February 16, 2021 by <a href="#">Dmitry Bandurin</a></p>
 
         <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
         <hr>
@@ -94,8 +91,8 @@
       <div class="blog-post">
         <a name="blog2"></a>
 
-        <h2 class="blog-post-title">Another blog post</h2>
-        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
+        <h2 class="blog-post-title">Reinforcement Learning for manufacturing pipeline optimization</h2>
+        <p class="blog-post-meta">February 20, 2021 by <a href="#">Georgy Golovanov</a></p>
 
         <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
         <blockquote>
@@ -106,20 +103,6 @@
       </div><!-- /.blog-post -->
 
       <br><br>
-      <div class="blog-post">
-        <a name="blog3"></a>
-        <h2 class="blog-post-title">New feature</h2>
-        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <ul>
-          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-          <li>Donec id elit non mi porta gravida at eget metus.</li>
-          <li>Nulla vitae elit libero, a pharetra augue.</li>
-        </ul>
-        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-      </div><!-- /.blog-post -->
 
       <nav class="blog-pagination">
         <a class="btn btn-outline-primary" href="#">Older</a>
@@ -158,32 +141,5 @@
 
 </main><!-- /.container -->
 
-
-    <aside class="col-md-4 blog-sidebar">
-
-      <div class="p-2 mb-2 bg-light rounded">
-        <h4 class="font-italic"> One More Test Blog </h4>
-        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. 
-          Cras mattis consectetur purus sit amet fermentum. 
-          Aenean lacinia bibendum nulla sed consectetur.</p>
-      </div> 
-
-      <div class="p-1">
-        <div class="my-3 py-3">
-          <img src="../static/Plots/SupplyChain/data-science-for-inventory-optimization-01.png"  
-               width="70%" height="80%">
-          <h6 class="display-6" align="center">Figure 1: Supply Chain.</h6>
-        </div>
-      </div>
-
-      <div class="p-4">
-        <h4 class="font-italic">References</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ol>
-      </div>
-    </aside>
 
 {% endblock %}

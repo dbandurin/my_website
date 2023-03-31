@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="/static/product.css"> 
+        
+      
+        <title>Data Science for Business</title>
+
+    </head>
+
+    <body>
+
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
+          <a class="py-2 d-none d-md-inline-block" href="/#section_main">Tour</a>
+          <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+               aria-haspopup="true" aria-expanded="false">Our Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/pred_repair">Predictive Repairs</a>
+              <a class="dropdown-item" href="/supply_chain">Supply Chain</a>
+              <a class="dropdown-item" href="/logistics">Logistics</a>
+              <a class="dropdown-item" href="/iiot">IIoT</a>
+            </div>
+          <!-- </li> -->
+          <a class="py-2 d-none d-md-inline-block" href="/dashboards">Dashboards</a>
+          <a class="py-2 d-none d-md-inline-block" href="/blogs">Blogs</a>
+          <a class="py-2 d-none d-md-inline-block" href="/about_us">About Us</a>
+          <a class="py-2 d-none d-md-inline-block" href="/contact_us">Contact Us</a>
+        </div>
+      </nav>
+
+      
+
+<div class="container">
+  <header class="blog-header py-3">
+        <h1 align="center">Logistics</h1>
+  </header>
+
+  <div class="nav-scroller py-0 mb-8">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#overview">Overview</a>
+      <a class="p-2 text-muted" href="#section1">Typical problems</a>
+      <a class="p-2 text-muted" href="#section2">Example solutions</a>
+      
+    </nav>
+  </div>
+
+  <h3 class="pb-2 mb-8 font-italic border-bottom">
+    <!-- From the Firehose -->
+  </h3>
+
+</div>
+
+<main role="main" class="container">
+
+  <div class="row">
+    <div class="col-md-12 blog-main">
+
+      <div class="blog-post">
+        <a name="overview"></a>
+        <h3 class="blog-post-title">1. Overview</h3>
+
+        <p>
+          Logistics planning  is the process of integrating and utilizing suppliers, manufacturers, warehouses, and retailers so that 
+          products are produced and delivered at the right quantities and at the right time while minimizing costs and satisfying 
+          customer requirements.
+        </p>
+
+        <p>
+          Implementation of Logistics system has crucial impacts on a company’s financial performance. 
+          The six major cost components that form the overall logistics costs are: 
+          (1) raw material costs, (2) costs of raw material transportation from vendors to manufacturing plants, 
+          (3) production costs at manufacturing plants, (4) transportation costs from plants to warehouses, (5) inventory or storage costs 
+          at warehouses, and (6) transportation costs from warehouses to end users.          
+        </p>
+
+        <center>
+          <img src="../static/Plots/Logistics/Logistics.png"  
+          class="center" width="80%" height="80%" >
+          <h6>Figure 1: Logistics Chain.</h6>
+        </center>
+        <br>                                        
+
+      </div>
+
+      <br><br>
+      <div class="blog-post">
+        <a name="section1"></a>
+        <h3 class="blog-post-subtitle">2. Typical Problems</h3>
+        
+        In this section, we list typical logistical problems different industries may face.
+
+        <p>
+          <ul>
+            <li> <u>Transportation problem 1</u>:  Determine how many products to ship from each factory to each warehouse, 
+                 to minimize shipping cost while meeting warehouse demands and not exceeding factory supplies. 
+
+            <li> <u>Transportation problem 2 (Multi-Level Transportation)</u>:   Determine how many products to ship from 
+                 each factory to each warehouse and each customer, to minimize total shipping cost while meeting demands and 
+                 not exceeding warehouse capacities and factory supplies.
+         </li>
+
+         <li> <u>Transportation problem 3 (Multi-Level, Multi-Commodity Transportation)</u>:    
+            Determine how many products of several different types to ship from each factory to each warehouse and each customer, 
+            to minimize total shipping cost while meeting demands and not exceeding capacities and supplies.
+         </li>
+         <li> <u>Knapsack (Partial Loading)</u>:  Decide which sizes or types of products to load into a vehicle, 
+                 given its size limits, to best meet demand or to minimize wasted space.
+       </li>
+       <li>
+         <u>Facility Location:</u> Determine which (if any) plants to close to minimize total costs, which include fixed operating 
+        costs and shipping costs from plants to warehouses.
+       </li>
+       <li>
+         <u> Production + Transportation  </u>: Determine how many products to produce in each factory and ship to warehouses and customers, 
+             to minimize overall costs while meeting demands and not exceeding warehouse capacities and factory supplies.
+       </li>
+          </ul>
+        </p>   
+
+      </div>
+
+      <br>
+      <div class="blog-post">
+        <a name="section2"></a>
+        <br>
+        <h3 class="blog-post-title">3.	Example solutions</h3>
+
+        <b>
+           <h5>
+            (A) Sigle-Stage Multi-Commodity Transportation Problem.
+           </h5>
+        </b>
+
+        <p>
+            In this subsection, as an example, we consider Sigle-Stage Multi-Commodity Transportation Problem.
+        </p>
+        <p>
+          Problem: One needs to minimize shipment cost to deliver 3 products from 2 factories to 10 customers.
+          <br>
+          Constrains: (a) customer demand for each product and (b) factory capacities.
+          <br>
+          Details to this problem are shown in the table of Figure 2. 
+        </p>
+
+          <center>
+            <img src="../static/Plots/Logistics/Logistics_p1.png" width="90%">
+         <h6>Figure 2: Sigle-Stage Multi-Commodity Transportation Problem.</h6>
+          </center>
+          <br>
+
+        <p>
+          Figure 3 shows solution for this problem. Provided the delivery costs from Figure 2, we found optimal solution
+          with a minimal cost.
+        </p>
+
+          <center>
+            <img src="../static/Plots/Logistics/Logistics_p2.png" width="80%">
+            <img src="../static/Plots/Logistics/Logistics_p3.png" width="40%"> <img src="../static/Plots/Logistics/Logistics_p4.png" width="40%">
+         <h6>Figure 3: Solution for Sigle-Stage Multi-Commodity Transportation Problem.</h6>
+          </center>
+          <br>
+
+        <b>
+            <h5>
+             (B) Facility Choice.
+            </h5>
+       </b>
+
+       <p>
+         <li>
+          We have to shutdown or choose some facilities in cases where the production capacity is much higher than the demand. 
+         </li>
+         <li>
+          Here we have to consider the total cost (Fixed operation cost + Production cost + Transportation cost) and do optimization 
+          to decide which facilities have to be chosen or shutdown , while not exceeding the supply available from each chosen facilities 
+          and meeting the demand of each destination. 
+         </li>
+
+        <li>
+          Input of the model are Number of facilities(Sources), Number of warehouses(Destinations), Commodity list of each facilities, 
+          Shipment cost per unit of commodities from each  facility to each warehouses, Fixed operation cost of each facilities, 
+          Production cost per unit of commodities at each facilities,  Production capacity of commodities at each facility and 
+          Demand of commodities at each warehouse. 
+        </li>
+
+       </p>
+
+       <center>
+        <img src="../static/Plots/Logistics/Logistics_p5.png" width="110%">
+            <h6>Figure 4: Facility Choice Problem.</h6>
+      </center>
+      
+      Figure 3 shows solution for this problem. After analyzing all possible combinations, most optimal solution
+      might be closing Facility 3 or 3 & 4.
+      Our tools allow inspecting all these solutions in details.
+    
+      <br>
+      <br>
+      <center>
+        <img src="../static/Plots/Logistics/Logistics_p6.png" width="80%">
+            <h6>Figure 5: Solution for Facility Choice Problem.</h6>
+      </center>
+
+      <br>
+       Similarly can be solved other problems listed in the previous section.
+
+      </div>
+
+  </div> <!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by 
+    <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p> -->
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+
+    <body>
+</html>

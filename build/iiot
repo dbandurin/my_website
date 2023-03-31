@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="/static/product.css"> 
+        
+      
+        <title>Data Science for Business</title>
+
+    </head>
+
+    <body>
+
+      <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+          </a>
+          <a class="py-2 d-none d-md-inline-block" href="/">Home</a>
+          <a class="py-2 d-none d-md-inline-block" href="/#section_main">Tour</a>
+          <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" 
+               aria-haspopup="true" aria-expanded="false">Our Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="/pred_repair">Predictive Repairs</a>
+              <a class="dropdown-item" href="/supply_chain">Supply Chain</a>
+              <a class="dropdown-item" href="/logistics">Logistics</a>
+              <a class="dropdown-item" href="/iiot">IIoT</a>
+            </div>
+          <!-- </li> -->
+          <a class="py-2 d-none d-md-inline-block" href="/dashboards">Dashboards</a>
+          <a class="py-2 d-none d-md-inline-block" href="/blogs">Blogs</a>
+          <a class="py-2 d-none d-md-inline-block" href="/about_us">About Us</a>
+          <a class="py-2 d-none d-md-inline-block" href="/contact_us">Contact Us</a>
+        </div>
+      </nav>
+
+      
+
+<div class="container">
+  <header class="blog-header py-3">
+        <h1 align="center">Industrial Internet of Things</h1>
+  </header>
+
+  <div class="nav-scroller py-0 mb-8">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#overview">Overview</a>
+      <a class="p-2 text-muted" href="#ind4.0">Industry 4.0</a>
+      <a class="p-2 text-muted" href="#iiot">IIoT</a>
+    </nav>
+  </div>
+
+  <h3 class="pb-2 mb-8 font-italic border-bottom">
+    <!-- From the Firehose -->
+  </h3>
+
+</div>
+
+<main role="main" class="container">
+
+  <div class="row">
+    <div class="col-md-12 blog-main">
+
+      <div class="blog-post">
+        <a name="overview"></a>
+        <h3 class="blog-post-title">Overview</h3>
+
+        <p>
+          The Industrial Internet of Things or IIoT mainly refers to an industrial framework where a large number of machines 
+          or devices are connected and synchronized through software tools.
+          The devices of industrial IOT range from complex industrial robots to tiny environmental sensors.
+        </p>
+
+        <p>
+          For a large scale, IIoT is an element of Industry 4.0 and it requires low maintenance along with the low cost to operate 
+          in real-time in challenging environments.
+          Generally, companies use industrial IOT projects for internal cost-saving. The commonly used applications of 
+          IIoT are smart factory, smart metering, smart grid, and many more.
+        </p>
+
+        <p>
+          <center>
+            <img src="../static/Plots/IIOT/iiot1.jpg"  
+            class="center" width="99%" height="99%" >
+            <br><br>
+            <h6> Figure 1. IIoT applications.</h6>
+          </center>
+        </p>                                        
+
+      </div>
+
+      <div class="blog-post">
+        <a name="ind4.0"></a>
+        <h3 class="blog-post-title">Industry 4.0</h3>
+
+        <p>
+          Industry 4.0 is signalling a change in the traditional manufacturing landscape. 
+          Also known as the Fourth Industrial Revolution, Industry 4.0 encompasses three technological trends driving 
+          this transformation: connectivity, intelligence and flexible automation.
+        </p>
+        
+
+        <p>
+          Emergence of digital solutions and advanced technologies are often associated with Industry 4.0.
+          Its main components include: <br>
+          <li>Industrial Internet of Things </li>
+          <li>Big Data </li>
+          <li>
+            Cloud computing
+          </li>
+          <li>
+            Additive manufacturing (AM)
+          </li>
+          <li>
+            Advanced robotics
+          </li>
+          <li>
+            Augmented and virtual reality (AR/VR)
+          </li>
+          
+        </p>
+
+      </div>
+
+      <div class="blog-post">
+        <a name="iiot"></a>
+        <h3 class="blog-post-title">Industrial Internet of Things</h3>
+
+        <p>
+          The heart of Industry 4.0 is the Internet of Things (IoT).
+
+          IoT refers to a network of physical devices that are digitally interconnected, facilitating the communication and 
+          exchange of data through the Internet. 
+          These smart devices could be anything from smartphones and household appliances to cars and even buildings.
+        </p>
+
+        <p>
+          Industrial IoT is a subset of the Internet of Things, where various sensors, Radio Frequency Identification (RFID) tags, 
+          software and electronics 
+          are integrated with industrial machines and systems to collect real-time data about their condition and performance.
+        </p>
+     
+        <p>
+          IIoT has many use cases, with asset management and tracking being one of the major applications of the technology today.
+          For example, IIoT can be used is to prevent the overstocking or understocking of inventory.
+        </p>
+
+        <p>
+          One way to achieve this is to use shelf-fitted sensors and weighing devices to broadcast inventory information to your warehouse management system. Putting such a system in place allows warehouse 
+          managers to monitor inventory levels, thereby gaining real-time visibility and control over the inventory.
+        </p>
+
+        <p>
+          IIoT can significantly improve operations, increase efficiency, reduce costs and provide 
+          valuable real-time visibility across the supply chain.
+        </p>
+
+        <p>
+          <center>
+            <img src="../static/Plots/IIOT/iiot2.jpg"  
+            class="center" width="79%" height="79%" >
+            <br><br>
+            <h6> Figure 2. Internet-based “smart” factories at Siemens.</h6>
+          </center>
+        </p>   
+
+    </div><!-- /.blog-main -->
+
+
+    <!-- <aside class="col-md-4 blog-sidebar">
+
+      <div class="p-2 mb-2 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. 
+          Cras mattis consectetur purus sit amet fermentum. 
+          Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div> 
+
+      <div class="p-1">
+        <div class="my-3 py-3">
+          <img src="../static/Plots/SupplyChain/data-science-for-inventory-optimization-01.png"  
+               width="120%" height="150%">
+          <h6 class="display-6" align="center">Figure 1: Supply Chain.</h6>
+        </div>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">References</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>
+    </aside> -->
+
+  </div> <!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by 
+    <a href="https://twitter.com/mdo">@mdo</a>.</p>
+  <p> -->
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+
+
+
+    <body>
+</html>

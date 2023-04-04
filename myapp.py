@@ -101,16 +101,16 @@ def contact_us():
   elif request.method == 'GET':
     return render_template('contact.html', form=form)
   
+  
+@app.route("/ecom", methods=['GET', 'POST'])
+def ecom():
+    print('ECom called, request.method = ',request.method)
+    return render_template('ecom.html')
 
 # @app.route("/document", methods=['GET', 'POST'])
 # def document():
 #     print('Documents called, request.method = ',request.method)
 #     return render_template('document.html')
-
-# @app.route("/ecom", methods=['GET', 'POST'])
-# def ecom():
-#     print('ECom called, request.method = ',request.method)
-#     return render_template('ecom.html')
 
 if __name__ == '__main__':
     app.run(port=5003, debug=True)

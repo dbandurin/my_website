@@ -3,15 +3,94 @@
 {% block content %}
 
 <br>
-<h3 align='center'>On this page we collected links to some our dashboards.</h3>
+<h3 align='center'> Dashboards</h3>
 <br>
 
+<DIV style="width: 1000px; text-align: left; margin: 20px">
+    <p> Dashboards below show some example applications optimization  tools 
+        applied to supply chain and logistics industry as well as anomaly detection detection in time series data.
+        Please see mode details in <a href="{{ url_for('supply_chain') }}">Our Solutions</a>  and 
+        <a href="{{ url_for('blogs') }}">Blogs</a>  above. 
+    </p>
+</DIV>
+
 <ul>
-<li> Covid-19 statistics <a href="http://covid-stat.herokuapp.com/"> dashboard </a></li>
-<li> Finding anomalies in time series data <a href="http://pdm-anomaly.herokuapp.com/"> dashboard </a></li>
-<li> Classification with time series data <a href=""> dashboard (under construction)</a></li>
-<li> Document processing <a href="http://doc360.us-east-1.elasticbeanstalk.com">demo</a></li>
+<li><b> Supply chain simulation and optimization</b> <a href="https://supplychain-simopt.herokuapp.com"> dashboard. </a>
+    <ul>
+    <li>
+        For a given item cost, cost-to-order, holding cost at a warehouse,  lead time / delivery days 
+        (simulated using a Poisson distribution with a given mean value), order target 
+        (=desired amount of items to keep in a warehouse), and order cutoff (minimal amount below which we issue a new order),
+        it shows an expected inventory and budget over next 7 days. Choice of random seed allows simulating multiple times.
+    </li>
+    <li>
+        Optimizatin procedure (on a separate tab) finds a best policy (Order target, Order cutoff) that maximizes
+        the budget over 7 days.
+    </li>
+  </ul>
+
+</li>
+
+ <center>
+    <img src="../static/Plots/Dashboards/IO.png"  
+    class="center" width="55%" height="55%" >
+    <h5>Single warehouse supply simulation.</h5>
+  </center> 
+<br>
+
+  Actual optimization problems can be more complecated, and include a multi-echelon supply chain, 
+  described in "supply_chain". A more sophisitcated optimization methods are required in this case.
+  Please <a href="{{ url_for('contact_us') }}">let us know</a> if it is your case, and we would happy to help!
+
+<br><br><br>
+
+<li> <b>Logisitcs optimization</b>  <a href="https://logistics-optimize.herokuapp.com"> dashboard </a></li>
+    <ul>
+    <li>
+        This dashboard allows to solve a couple of transportation problems. For example, provided a couple of factories
+        and a set of customers, we may want to minimize the costs of shipping goods from factories to customers, 
+        while not exceeding the supply available from each factory and meeting the demand of each customer.
+    </li>
+    <li>
+        In the other example, we may choose to store the produced goods in intermediate warehouses. Provided
+        that we know the warehouse capacities, customer demands, and shipping costs, we can optmize 
+        the overall transportation schedule to minimize costs.
+    </li>
+    </ul>
+<br>
+<center>
+    <img src="../static/Plots/Dashboards/problem1.png"  
+    class="center" width="45%" height="45%" >
+    <h5>Example of optimization for a transportation problem.</h5>
+</center> 
+<br>
+Real life logistics problems can be more complex, and include, for instance,
+multiple commodities and limited size vehicles, as described in Section "Logitics".
+We would be glad to consider your concrete problem and <a href="{{ url_for('contact_us') }}"> help you</a>  solve it.
+
+<br><br><br>
+
+<li> <b> Finding anomalies in time series data</b>  <a href="https://predm-anomaly.herokuapp.com"> dashboard </a></li>
+Your time series data may contain some patterns which are not always that easy to detect.
+An automated procedure that analyzes your streaming data, and reports about such patterns might be
+very helpful in this case.
+
+<center>
+    <img src="../static/Plots/Dashboards/Anomaly_signal.png"  
+    class="center" width="45%" height="45%" >
+    <h5>Finding anomalies in time series data.</h5>
+</center> 
+
+<!-- <li> Classification with time series data <a href=""> dashboard (under construction)</a></li> -->
+<!-- <li> Document processing <a href="http://doc360.us-east-1.elasticbeanstalk.com">demo</a></li> -->
 </ul>
 
         
 {% endblock %}
+
+class ContactForm(FlaskForm):
+  name = StringField("Name",  validators=[DataRequired()])
+  email = StringField("Email",validators = [DataRequired(),Email()])
+  subject = StringField("Subject",validators = [DataRequired()])
+  message = TextAreaField("Message",validators = [DataRequired()])
+  submit = SubmitField("Send")

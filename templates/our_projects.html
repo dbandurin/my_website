@@ -31,130 +31,218 @@
         <h3 class="blog-post-title">Predictive repairs in Automotive</h3>
 
         <p>
-          The Industrial Internet of Things or IIoT mainly refers to an industrial framework where a large number of machines 
-          or devices are connected and synchronized through software tools.
-          The devices of industrial IOT range from complex industrial robots to tiny environmental sensors.
-        </p>
-
-        <p>
-          For a large scale, IIoT is an element of Industry 4.0 and it requires low maintenance along with the low cost to operate 
-          in real-time in challenging environments.
-          Generally, companies use industrial IOT projects for internal cost-saving. The commonly used applications of 
-          IIoT are smart factory, smart metering, smart grid, and many more.
-        </p>
-
-        <p>
-          <center>
-            <img src="../static/Plots/IIOT/iiot1.jpg"  
-            class="center" width="99%" height="99%" >
-            <br><br>
-            <h6> Figure 1. IIoT applications.</h6>
-          </center>
-        </p>                                        
+          Our delivered projects in Autimotive include condition monitoring of moving truck with sensors 
+          installed on engine, transmission, brakes, tires, etc., that measure such quantities as temperature, 
+          pressure, speed, torque, acceleration, GPS location and predict when some parts may start failing. 
+          The delivered models / techniques included
+  
+          <ul>
+            <li>
+              Anomaly detection using Machine Learning  algorithms with live daily monitoring
+            </li>
+            <li>
+              Reliability  and multivariate survival analysis
+            </li>
+            <li>
+              Factor analysis
+            </li>
+          </ul>
+        </p>                                      
 
       </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <center>
+            <figure>
+              <img src="../static/Plots/Projects/Automotive1.png" alt="Figure 1" width="100%" height="100%">
+              <br><br>
+              <figcaption> Dashboard showing detected anomalies in truck exhaust system by days.</figcaption>
+            </figure>
+          </center>
+          </div>
+          <div class="col-md-6">
+            <center>
+            <figure>
+              <img src="../static/Plots/Projects/Automotive2.png" alt="Figure 2" width="100%" height="100%" >
+              <br>
+              <figcaption>       Survavival probability vs miles.</figcaption>
+            </figure>
+          </center>
+          </div>
+        </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <br><br>
+
       <div class="blog-post">
         <a name="InvOpt"></a>
-        <h3 class="blog-post-title">Inventory optimization</h3>
+        <h3 class="blog-post-title">Inventory optimization and material management.</h3>
 
         <p>
-          The heart of Industry 4.0 is the Internet of Things (IoT).
-
-          IoT refers to a network of physical devices that are digitally interconnected, facilitating the communication and 
-          exchange of data through the Internet. 
-          These smart devices could be anything from smartphones and household appliances to cars and even buildings.
+          Inventory optimization is heavily based on understanding material data and patterns in the data.
+          Our expertise includes material analysis for complex supply chains,
+          demand and lead time analytics, getting insights for wahrehouse and material networks,
+          building algorithms to optimize millions of customer materials, developing forecasting 
+          and risk management tools, material matching algorithms using NLP and graphs.
         </p>
 
         <p>
-          Industrial IoT is a subset of the Internet of Things, where various sensors, Radio Frequency Identification (RFID) tags, 
-          software and electronics 
-          are integrated with industrial machines and systems to collect real-time data about their condition and performance.
-        </p>
-     
-        <p>
-          IIoT has many use cases, with asset management and tracking being one of the major applications of the technology today.
-          For example, IIoT can be used is to prevent the overstocking or understocking of inventory.
+          In particular, we found that advanced techniques in material simulation and optimization
+          (see eg. <a href="{{ url_for('dashboards') }}"> our dashboards</a> ), probabilistic modeling are crucial in finding optimal inventory policies.           
         </p>
 
         <p>
-          One way to achieve this is to use shelf-fitted sensors and weighing devices to broadcast inventory information to your warehouse management system. Putting such a system in place allows warehouse 
-          managers to monitor inventory levels, thereby gaining real-time visibility and control over the inventory.
+          At the same time, NLP models are very helpful to "describe" materials, and
+          graph models (see 'Graphical representation of supply chain' on <a href="{{ url_for('supply_chain') }}"> </a> page) 
+          help undestand a place of a given material in a complex supply chain are extremely helpful. 
+          The last two tools combined allow us to find
+          identical/similar materials and reduce costs related with inventory replanishment.
         </p>
 
         <p>
-          IIoT can significantly improve operations, increase efficiency, reduce costs and provide 
-          valuable real-time visibility across the supply chain.
+          The modern economic integration and increased market uncertainty have brought great challenges to SCM. 
+          In this paper, two Deep Reinforcement Learning (DRL) based methods are proposed to solve multi-period 
+          capacitated supply chain optimization problem under demand uncertainty.
         </p>
 
+        <!-- https://www.semanticscholar.org/paper/Deep-Reinforcement-Learning-Approach-for-Supply-Peng-Zhang/b41ca398e5ac1dae918b3dfb6ac0efa815a3303f -->
+
+        <br>
         <p>
           <center>
-            <img src="../static/Plots/IIOT/iiot2.jpg"  
-            class="center" width="79%" height="79%" >
+            <img src="../static/Plots/Projects/SC_RL.png"  
+            class="center" width="60%" height="60%" >
             <br><br>
-            <h6> Figure 2. Internet-based “smart” factories at Siemens.</h6>
+            <h6> Inventory optimization using Deep Reinforcement Learning.</h6>
           </center>
         </p>   
+        
+        <br><br>
 
         <div class="blog-post">
           <a name="Sat"></a>
-          <h3 class="blog-post-title">Optimization of sattelite constellations</h3>
+          <h3 class="blog-post-title">Optimization of sattelite constellation</h3>
   
           <p>
-            Industry 4.0 is signalling a change in the traditional manufacturing landscape. 
-            Also known as the Fourth Industrial Revolution, Industry 4.0 encompasses three technological trends driving 
-            this transformation: connectivity, intelligence and flexible automation.
+            Problem: 
+            using a satellite constellation, find an optimal control policy 
+            (=sattelite trajectory, speed and antenna direction angles) to maximize covered population for an internet service.
+
+            Solution:
+            <ul>
+              <li>
+                All satellites are combined in one reward function with a penalty as “uncovered population”*K-factor.
+              </li>
+              <li>
+                Switched to “ray.rllib.algorithms” and using one external registered environment. It makes quite easy to
+                change external algorithms (A3C, Impala, PPO, BC look best) and optimize hypeparameters.          
+              </li>
+              <li>
+                A model gets trained and deployed using Amazon CodeCommit, Lambda, and Sagemaker (RLEstimator).
+              </li>
+              <li>
+                Tested Multi-Agent RL: In this approach, each agent cares about the action of only one entity (sat.) in the network. 
+                It is much harder to train and tune as compared to  single-agent RL models, since the success of the entire model depends    
+                on the good training and tuning of every agent (shared vs multiple policies).              
+              </li>
+            </ul>
           </p>
           
-  
-          <p>
-            Emergence of digital solutions and advanced technologies are often associated with Industry 4.0.
-            Its main components include: <br>
-            <li>Industrial Internet of Things </li>
-            <li>Big Data </li>
-            <li>
-              Cloud computing
-            </li>
-            <li>
-              Additive manufacturing (AM)
-            </li>
-            <li>
-              Advanced robotics
-            </li>
-            <li>
-              Augmented and virtual reality (AR/VR)
-            </li>
-            
-          </p>
-  
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <figure>
+                  <img src="../static/Plots/Projects/Sattelite_1.png" alt="Figure 1" width="100%" height="100%">
+                  <figcaption>RL Optimization policies.</figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <figure>
+                  <img src="../static/Plots/Projects/Sattelite_2.png" alt="Figure 2" width="90%" height="90%">
+                  <figcaption>Optimization of sattelite constellation.</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
         </div>
+
+        <br><br>
 
         <div class="blog-post">
           <a name="ML_pipe"></a>
-          <h3 class="blog-post-title">Building end-to-end ML pipelines</h3>
+          <h3 class="blog-post-title">Building end-to-end ML pipelines for predictive repairs</h3>
   
           <p>
-            The Industrial Internet of Things or IIoT mainly refers to an industrial framework where a large number of machines 
-            or devices are connected and synchronized through software tools.
-            The devices of industrial IOT range from complex industrial robots to tiny environmental sensors.
+            The predictive maintenance workflow typically includes following main 5 elements.
+
+            <ol type="1">
+              <li>
+            Access sensor data.
+Make sure the data is in the right format. Large data sets may not fit into computer memory, and will require out-of-memory processing techniques or a cluster. 
+            </li>
+
+            <li>
+              Preprocess data.
+
+              Data in the real world is rarely perfect; it may have obvious outliers and noise that need to be removed to get a realistic picture of normal behavior. If the data has come from different sources, it will also need to be combined. 
+            </li>
+
+            <li>
+              Extract features.
+
+              Instead of feeding sensor data directly into machine learning models, it is common to extract features 
+               from the sensor data. These features capture higher-level information in the sensor data. An iterative 
+               approach—in which features are added, new models are trained, and their 
+              performance is compared can work well here to determine the effectiveness of different features on the results. 
+            </li>
+
+            <li>
+              Train the model.
+
+              In this step, we classify data as healthy/faulty, set thresholds for healthy/warning/failure states, 
+              and estimate remaining useful life for components. We’ll need to create a comprehensive list of failure 
+              scenarios to predict, choose classification methods, and simulate models.
+            </li>
+
+            <li>
+              Deploy the model.
+
+              Generate code and deploy models as an application integrated with other applications in an IT environment. 
+              (Models may be deployed to embedded devices by converting them to a low-level language such as C.)
+            </li>
+           
+          </ol>
+
           </p>
   
+          <center>
           <p>
-            For a large scale, IIoT is an element of Industry 4.0 and it requires low maintenance along with the low cost to operate 
-            in real-time in challenging environments.
-            Generally, companies use industrial IOT projects for internal cost-saving. The commonly used applications of 
-            IIoT are smart factory, smart metering, smart grid, and many more.
-          </p>
-  
-          <p>
-            <center>
-              <img src="../static/Plots/IIOT/iiot1.jpg"  
-              class="center" width="99%" height="99%" >
-              <br><br>
-              <h6> Figure 1. IIoT applications.</h6>
-            </center>
+              <img src="../static/Plots/Projects/ml_pipe2.png"  
+              class="center" width="90%" height="90%" >
+              <br>
+              <h6> Basic workflow for predictive maintenance.</h6>
           </p>                                        
-  
+          <br><br>
+
+          <p>
+            <img src="../static/Plots/Projects/ml_pipe.png"  
+            class="center" width="90%" height="90%" >
+            <br>
+            <h6> Example of data processing and model building pipeline at Azure.</h6>
+        </p>     
+        </center>
+
         </div>
 
     </div><!-- /.blog-main -->

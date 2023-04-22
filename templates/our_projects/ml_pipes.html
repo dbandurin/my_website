@@ -1,0 +1,75 @@
+{% extends "base.html"%}
+{% block content %}
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    
+    <div class="my-3 p-2 text-center">
+        <h3 class="display-4 font-weight-normal">Building end-to-end ML pipelines for predictive repairs</h3>
+    </div>
+    
+
+    <p>
+      The predictive maintenance workflow typically includes following main 5 elements.
+
+      <ol type="1">
+        <li>
+      Access sensor data.
+
+      Make sure the data is in the right format. Large data sets may not fit into computer memory, and will require out-of-memory processing techniques or a cluster. 
+      </li>
+
+      <li>
+        Preprocess data.
+
+        Data in the real world is rarely perfect; it may have obvious outliers and noise that need to be removed to get a realistic picture of normal behavior. If the data has come from different sources, it will also need to be combined. 
+      </li>
+
+      <li>
+        Extract features.
+
+        Instead of feeding sensor data directly into machine learning models, it is common to extract features 
+         from the sensor data. These features capture higher-level information in the sensor data. An iterative 
+         approach—in which features are added, new models are trained, and their 
+        performance is compared can work well here to determine the effectiveness of different features on the results. 
+      </li>
+
+      <li>
+        Train the model.
+
+        In this step, we classify data as healthy/faulty, set thresholds for healthy/warning/failure states, 
+        and estimate remaining useful life for components. We’ll need to create a comprehensive list of failure 
+        scenarios to predict, choose classification methods, and simulate models.
+      </li>
+
+      <li>
+        Deploy the model.
+
+        Generate code and deploy models as an application integrated with other applications in an IT environment. 
+        (Models may be deployed to embedded devices by converting them to a low-level language such as C.)
+      </li>
+     
+    </ol>
+
+    </p>
+
+    <center>
+    <p>
+        <img src="../../static/Plots/Projects/ml_pipe2.png"  
+        class="center" width="70%" height="70%" >
+        <br>
+        <h6> Basic workflow for predictive maintenance.</h6>
+    </p>                                        
+    <br><br>
+
+    <p>
+      <img src="../../static/Plots/Projects/ml_pipe.png"  
+      class="center" width="80%" height="80%" >
+      <br>
+      <h6> Example of data processing and model building pipeline at Azure.</h6>
+  </p>     
+  </center>
+
+</div>
+
+{% endblock %}

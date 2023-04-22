@@ -1,0 +1,61 @@
+{% extends "base.html"%}
+{% block content %}
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    
+    <div class="my-3 p-2 text-center">
+        <h3 class="display-4 font-weight-normal">Predictive repairs in Automotive</h3>
+    </div>
+    
+
+    <p>
+      Our delivered projects in Autimotive include condition monitoring of moving truck with sensors 
+      installed on engine, transmission, brakes, tires, etc., that measure such quantities as temperature, 
+      pressure, speed, torque, acceleration, GPS location and predict when some parts may start failing. 
+      The delivered models / techniques included
+
+      <ul>
+        <li>
+          Anomaly detection using Machine Learning  algorithms with live daily monitoring
+        </li>
+        <li>
+          Reliability  and multivariate survival analysis
+        </li>
+        <li>
+          Factor analysis
+        </li>
+      </ul>
+    </p>                                      
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <center>
+        <figure>
+          <img src="../../static/Plots/Projects/Automotive1.png" alt="Figure 1" width="100%" height="100%">
+          <br><br>
+          <figcaption> Dashboard showing detected anomalies in truck exhaust system by days.</figcaption>
+        </figure>
+      </center>
+      </div>
+      <div class="col-md-6">
+        <center>
+        <figure>
+          <img src="../../static/Plots/Projects/Automotive2.png" alt="Figure 2" width="100%" height="100%" >
+          <br>
+          <figcaption>       Survival probability vs miles.</figcaption>
+        </figure>
+      </center>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+{% endblock %}

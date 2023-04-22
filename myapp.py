@@ -32,6 +32,32 @@ def index():
     print('Index called')
     return render_template('home_product.html')
 
+
+@app.route("/projects", methods=['GET', 'POST'])
+def projects():
+    print('Solutions called, request.method = ',request.method)
+    return render_template('projects.html')
+
+@app.route("/pr_auto", methods=['GET', 'POST'])
+def pr_auto():
+    print('PR Auto called, request.method = ',request.method)
+    return render_template('our_projects/pr_auto.html')
+
+@app.route("/inv_opt", methods=['GET', 'POST'])
+def inv_opt():
+    return render_template('our_projects/inv_opt.html')
+
+@app.route("/sat_opt", methods=['GET', 'POST'])
+def sat_opt():
+    return render_template('our_projects/sat_opt.html')
+
+@app.route("/ml_pipes", methods=['GET', 'POST'])
+def ml_pipes():
+    return render_template('our_projects/ml_pipes.html')
+
+
+
+
 @app.route("/pred_repair", methods=['GET', 'POST'])
 def pred_repair():
     print('Solutions called, request.method = ',request.method)
@@ -57,6 +83,17 @@ def pipelines():
     print('Solutions called, request.method = ',request.method)
     return render_template('pipelines.html')
 
+@app.route("/ecom", methods=['GET', 'POST'])
+def ecom():
+    print('ECom called, request.method = ',request.method)
+    return render_template('ecom.html')
+
+# @app.route("/document", methods=['GET', 'POST'])
+# def document():
+#     print('Documents called, request.method = ',request.method)
+#     return render_template('document.html')
+
+
 @app.route("/dashboards", methods=['GET', 'POST'])
 def dashboards():
     print('Solutions called, request.method = ',request.method)
@@ -70,9 +107,10 @@ def blogs():
 def about_us():
     return render_template('about_us.html')
 
-@app.route("/our_projects", methods=['GET', 'POST'])
-def our_projects():
-    return render_template('our_projects.html')
+# @app.route("/our_projects", methods=['GET', 'POST'])
+# def our_projects():
+#     return render_template('our_projects.html')
+
 
 #https://code.tutsplus.com/tutorials/intro-to-flask-adding-a-contact-page--net-28982
 @app.route("/contact_us", methods=['GET', 'POST'])
@@ -101,16 +139,6 @@ def contact_us():
   elif request.method == 'GET':
     return render_template('contact.html', form=form)
   
-  
-@app.route("/ecom", methods=['GET', 'POST'])
-def ecom():
-    print('ECom called, request.method = ',request.method)
-    return render_template('ecom.html')
-
-# @app.route("/document", methods=['GET', 'POST'])
-# def document():
-#     print('Documents called, request.method = ',request.method)
-#     return render_template('document.html')
 
 if __name__ == '__main__':
     app.run(port=5003, debug=True)

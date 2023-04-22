@@ -1,0 +1,50 @@
+{% extends "base.html"%}
+{% block content %}
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    
+    <div class="my-3 p-2 text-center">
+        <h3 class="display-4 font-weight-normal">Inventory optimization and material management</h3>
+    </div>
+
+      <p>
+        Inventory optimization is heavily based on understanding material data and patterns in the data.
+        Our expertise includes material analysis for complex supply chains,
+        demand and lead time analytics, getting insights for wahrehouse and material networks,
+        building algorithms to optimize millions of customer materials, developing forecasting 
+        and risk management tools, material matching algorithms using NLP and graphs.
+      </p>
+
+      <p>
+        In particular, we found that advanced techniques in material simulation and optimization
+        (see eg. <a href="{{ url_for('dashboards') }}"> our dashboards</a> ), probabilistic modeling are crucial in finding optimal inventory policies.           
+      </p>
+
+      <p>
+        At the same time, NLP models are very helpful to "describe" materials, and
+        graph models (see 'Graphical representation of supply chain' on <a href="{{ url_for('supply_chain') }}"> </a> page) 
+        help undestand a place of a given material in a complex supply chain are extremely helpful. 
+        The last two tools combined allow us to find
+        identical/similar materials and reduce costs related with inventory replanishment.
+      </p>
+
+      <p>
+        The modern economic integration and increased market uncertainty have brought great challenges to SCM. 
+        In this paper, two Deep Reinforcement Learning (DRL) based methods are proposed to solve multi-period 
+        capacitated supply chain optimization problem under demand uncertainty.
+      </p>
+
+      <!-- https://www.semanticscholar.org/paper/Deep-Reinforcement-Learning-Approach-for-Supply-Peng-Zhang/b41ca398e5ac1dae918b3dfb6ac0efa815a3303f -->
+
+      <br>
+      <p>
+        <center>
+          <img src="../static/Plots/Projects/SC_RL.png"  
+          class="center" width="60%" height="60%" >
+          <br><br>
+          <h6> Inventory optimization using Deep Reinforcement Learning.</h6>
+        </center>
+      </p>   
+      
+{% endblock %}

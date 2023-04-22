@@ -1,0 +1,58 @@
+{% extends "base.html"%}
+{% block content %}
+
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-left bg-light">
+    
+  <div class="my-3 p-2 text-center">
+    <h3 class="display-4 font-weight-normal">Optimization of sattelite constellation</h3>
+  </div>
+
+  <p>
+    Problem: 
+    using a satellite constellation, find an optimal control policy 
+    (=sattelite trajectory, speed and antenna direction angles) to maximize covered population for an internet service.
+
+    Solution:
+    <ul>
+      <li>
+        All satellites are combined in one reward function with a penalty as “uncovered population”*K-factor.
+      </li>
+      <li>
+        Switched to “ray.rllib.algorithms” and using one external registered environment. It makes quite easy to
+        change external algorithms (A3C, Impala, PPO, BC look best) and optimize hypeparameters.          
+      </li>
+      <li>
+        A model gets trained and deployed using Amazon CodeCommit, Lambda, and Sagemaker (RLEstimator).
+      </li>
+      <li>
+        Tested Multi-Agent RL: In this approach, each agent cares about the action of only one entity (sat.) in the network. 
+        It is much harder to train and tune as compared to  single-agent RL models, since the success of the entire model depends    
+        on the good training and tuning of every agent (shared vs multiple policies).              
+      </li>
+    </ul>
+  </p>
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <figure>
+          <img src="../../static/Plots/Projects/Sattelite_1.png" alt="Figure 1" width="100%" height="100%">
+          <figcaption>RL Optimization policies.</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6">
+        <figure>
+          <img src="../../static/Plots/Projects/Sattelite_2.png" alt="Figure 2" width="90%" height="90%">
+          <figcaption>Optimization of sattelite constellation.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+  
+{% endblock %}

@@ -4,14 +4,14 @@
      
 <div class="container">
     <header class="blog-header py-3">
-          <h1 align="center">Our blog</h1>
+          <h1 align="center">Our blogs</h1>
     </header>
   
     <div class="nav-scroller py-0 mb-8">
       <nav class="nav d-flex justify-content-between">
-        <a class="p-2 text-muted" href="#blog1">Blog 1 </a>
-        <a class="p-2 text-muted" href="#blog2">Blog 2</a>
-        <a class="p-2 text-muted" href="#blog3">Blog 3</a>
+        <a class="p-2 text-muted" href="#blog1">Digital twins in Supply Chain</a>
+        <a class="p-2 text-muted" href="#blog2">RL for manufacturing pipeline optimization</a>
+        <a class="p-2 text-muted" href="#blog3">Anomaly detection in image data for manufacturing</a>
 
       </nav>
     </div>
@@ -23,22 +23,27 @@
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2 text-primary">Featured article</strong>
+          <h3 class="mb-0">Video Transformers: A Survey</h3>
+          <div class="mb-1 text-muted">Feb 2023</div>
+          <p class="card-text mb-auto">The survey explores various video-specific designs and architectural changes to overcome these limitations, 
+                                      along with training regimes and self-supervised learning strategies. 
+                                      The study concludes that Video Transformers outperform 3D ConvNets in action classification 
+                                      even with less computational complexity.</p>
+          <a href="https://arxiv.org/abs/2201.05991" class="stretched-link">Continue reading</a>
         </div>
       </div>
     </div>
     <div class="col-md-6">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Another great post</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
+          <strong class="d-inline-block mb-2 text-success">Featured project</strong>
+          <h3 class="mb-0">Introducing Segment Anything: Working toward the first foundation model for image segmentation</h3>
+          <div class="mb-1 text-muted">Apr 2023</div>
+          <p class="mb-auto">  <a href="https://ai.facebook.com">Meta AI</a> has introduced the Segment Anything Model (SAM) for Image Segmentation. 
+                           The project also features  <a href="https://ai.facebook.com/datasets/segment-anything/">Segment Anything 1-Billion mask dataset (SA-1B)</a>, 
+                            which is the most extensive segmentation dataset to date.</p>
+          <a href="https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/" class="stretched-link">Continue reading</a>
         </div>
       </div>
     </div>
@@ -115,7 +120,7 @@
         <a name="blog2"></a>
 
         <h2 class="blog-post-title">Reinforcement Learning for manufacturing pipeline optimization</h2>
-        <p class="blog-post-meta">November 20, 2022 by <a href="#">Svetlana Kharlamov</a></p>
+        <p class="blog-post-meta">November 20, 2022 by <a href="#">Svetlana Kharlamova</a></p>
 
 
         <p>
@@ -193,15 +198,66 @@
         <blockquote>
           <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
         </blockquote> -->
-
-        
       
       </div><!-- /.blog-post -->
 
       <br><br>
 
+      <div class="blog-post">
+        <a name="blog1"></a>
+
+        <h2 class="blog-post-title">Anomaly detection in image data for manufacturing</h2>
+        <p class="blog-post-meta">August 16, 2022 by <a href="#">Dmitry Bandurin</a></p>
+
+        <p>
+          In the manufacturing industry, detecting anomalies in image data is crucial for ensuring product quality 
+          and maintaining production efficiency. Anomaly detection is the process of identifying data points that 
+          deviate significantly from the expected behavior or pattern. In image data, anomalies could include defects,
+           scratches, or any other irregularities that indicate a potential problem in the manufacturing process.
+        </p>
+
+        <p>
+          With the advent of machine learning and artificial intelligence, anomaly detection in image data has 
+          become more sophisticated and efficient. Here are some methods and techniques used for anomaly detection 
+          in image data for manufacturing:
+        </p>
+        
+        <ul>
+          <li>
+            <em>Supervised Learning:</em>  In supervised learning, the algorithm is trained using labeled data, where the anomalies are already identified. The algorithm can then identify similar anomalies in new image data. This method requires a large amount of labeled data for training, which may not always be available.
+          </li>
+          <li>
+            <em>Unsupervised Learning:</em>
+             In unsupervised learning, the algorithm is trained using unlabeled data, and it is up to the algorithm to identify the anomalies. This method does not require labeled data, making it a more cost-effective solution for anomaly detection. However, the accuracy of the algorithm may not be as high as with supervised learning.
+          </li>
+          <li>
+            <em>Convolutional Neural Networks (CNNs):</em>
+             CNNs are a type of deep learning algorithm that is commonly used for image recognition and classification. CNNs are particularly effective for anomaly detection in image data because they can identify patterns in the data that are not easily recognizable by humans.
+          </li>
+          <li>
+            <em>Autoencoders:</em>
+             Autoencoders are another type of deep learning algorithm that can be used for anomaly detection in image data. Autoencoders work by compressing the image data into a lower-dimensional space and then reconstructing it. Anomalies in the data will result in a reconstruction error, which can be used to identify the anomaly.
+          </li>
+          <li>
+            <em>Feature Extraction:</em>
+             Feature extraction involves identifying specific features in the image data that are indicative of anomalies. These features could include color, texture, or shape. Once these features are identified, they can be used to train a machine learning algorithm to identify anomalies in new image data.
+          </li>
+        </ul>
+
+        <h4>Benefits</h4>
+
+        <p>
+          The benefits of using anomaly detection in image data for manufacturing are clear. By identifying anomalies early on, manufacturers can prevent defective products from entering the market, reducing costs associated with recalls and repairs. Anomaly detection also helps manufacturers identify potential issues in their manufacturing processes, allowing them to make necessary adjustments to improve efficiency and quality.
+        </p>
+
+        <p>
+          In conclusion, anomaly detection in image data is a powerful tool for the manufacturing industry. With the help of machine learning and deep learning algorithms, manufacturers can detect anomalies in image data quickly and accurately, preventing defective products from entering the market and improving overall production efficiency and quality.
+        </p>
+      </div><!-- /.blog-post -->
+
+
       <nav class="blog-pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
+        <a class="btn btn-outline-primary" href="{{ url_for('blogs_archive') }}">Older</a>
         <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
       </nav>
 
@@ -210,27 +266,26 @@
     <aside class="col-md-4 blog-sidebar">
       <div class="p-4 mb-3 bg-light rounded">
         <h4 class="font-italic">About</h4>
-        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <p class="mb-0">This section contains a collection of our blogs on applications of <em>ML & AI</em>  to industry,
+          current trends and expectations for the near future.</p>
       </div>
 
       <div class="p-4">
         <h4 class="font-italic">Archives</h4>
         <ol class="list-unstyled mb-0">
-          <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
+          <li><a href="{{ url_for('blogs_archive') }}">Older blogs</a></li>
         </ol>
       </div>
 
-      <div class="p-4">
+      <!-- <div class="p-4">
         <h4 class="font-italic">Elsewhere</h4>
         <ol class="list-unstyled">
           <li><a href="#">GitHub</a></li>
           <li><a href="#">Twitter</a></li>
           <li><a href="#">Facebook</a></li>
         </ol>
-      </div>
+      </div> -->
+
     </aside><!-- /.blog-sidebar -->
 
   </div><!-- /.row -->

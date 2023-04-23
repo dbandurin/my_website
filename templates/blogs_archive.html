@@ -1,0 +1,153 @@
+
+{% extends "base.html"%}
+{% block content %}
+     
+<div class="container">
+    <header class="blog-header py-3">
+          <h1 align="center">Our blogs</h1>
+    </header>
+  
+    <div class="nav-scroller py-0 mb-8">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" href="#blog1">Application of graphs to detect anomalies in power grids</a>
+      </nav>
+    </div>
+  
+</div>
+
+
+  <main role="main" class="container">
+
+  <div class="row">
+
+    <div class="col-md-8 blog-main">
+
+      <br><br>
+
+      <h3 class="pb-4 mb-8 font-italic border-bottom">
+        Archive
+      </h3>
+
+      <div class="blog-post">
+        <a name="blog1"></a>
+
+        <h2 class="blog-post-title">Application of graphs to detect anomalies in power grids</h2>
+        <p class="blog-post-meta">February 1, 2022 by <a href="#">Dmitry Bandurin</a></p>
+
+        <p>
+          The power grid is a complex network of interconnected components, and detecting anomalies is critical for maintaining the reliability and security of the grid. Traditional methods for anomaly detection in power grids are based on statistical models and require extensive domain expertise. However, with the recent advances in graph neural networks (GNNs), there is an opportunity to develop more effective anomaly detection techniques.
+        </p>
+
+        <h4>What are Graph Neural Networks?</h4>
+
+        <p>
+          GNNs are deep learning models designed to operate on graph-structured data. 
+          They have shown remarkable success in a wide range of applications, from natural language processing to computer vision.
+           In the context of power grids, GNNs can be used to capture the complex relationships between components and 
+           detect anomalies that may not be apparent from analyzing individual components in isolation.
+        </p>
+
+        <h4>
+          Application of GNNs for Anomaly Detection in Power Grids
+        </h4>
+
+        <p>One of the main challenges in power grid anomaly detection is the high dimensionality and complexity of the data. 
+          Power grids can have thousands of components, and these components can have multiple attributes, such as voltage, 
+          current, and phase angle. In addition, the relationships between components can be highly nonlinear and dynamic, 
+          making it difficult to model using traditional machine learning methods.
+        </p>
+
+        <p>
+          GNNs provide a natural framework for modeling the complex interdependencies between components in power grids. 
+          The nodes and edges in the graph can be used to represent the components and their relationships, and the GNN 
+          can learn to extract features from these representations. By leveraging these learned features, 
+          GNNs can identify anomalies in the power grid that might be difficult to detect using traditional methods.
+        </p>
+
+        <p>
+          One example of a GNN-based approach to anomaly detection in power grids is 
+          <a href="https://arxiv.org/pdf/2012.15006.pdf">the Grid Anomaly Detection System (GADS)</a>
+          developed by researchers at the University of Texas at Austin. GADS uses a GNN to model the topology and 
+          flow of power in the grid and identify anomalies based on deviations from expected patterns. 
+          GADS has been shown to accurately detect anomalies in simulated power grids, 
+           such as equipment failure and malicious attacks.
+        </p>
+
+        <p>          
+          Some recent works have demonstrated the effectiveness of GNNs for anomaly detection in power grids. 
+          For example, a team of researchers from the University of Hong Kong proposed 
+          <a href="https://ieeexplore.ieee.org/document/8844691">a GNN-based approach </a>
+          for power grid topology identification and anomaly detection. Their method involved constructing a graph 
+          from the power grid data, using the nodes to represent the electrical components and the edges 
+          to represent the physical connections. The GNN was then used to learn a low-dimensional representation 
+          of the graph that captured the important features of the power grid. 
+          Basically, GCN uses a GNN to learn the graph structure of the power grid and identify 
+          anomalies based on the changes in the graph structure. 
+          The method was shown to be effective in identifying anomalies in power grids, such as changes 
+          in the network topology or the presence of faults.
+
+          GCN has been used to detect anomalies in real-world power grids, 
+          including identifying the root cause of a power outage in Japan.
+        </p>
+
+        <p>
+          GNN-based anomaly detection techniques have several advantages over traditional methods. 
+          They can capture the complex relationships between components in the power grid, making 
+          them more effective at detecting anomalous behavior. Additionally, GNN-based methods are adaptable 
+          to different power grid configurations, 
+          making them useful for detecting anomalies in both traditional and renewable energy systems.
+        </p>
+
+        <p>
+          The use of GNNs to detect anomalies in power grids is a promising area of research. 
+          By modeling the power grid as a graph and analyzing the interconnected relationships between components, 
+          GNN-based techniques can detect anomalies quickly and accurately, helping 
+          to prevent blackouts and minimize damage to equipment. As power grids continue to evolve with 
+          the integration of renewable energy sources and new technologies, GNN-based methods will become increasingly 
+          important for maintaining the reliability and security of the grid.
+        </p>
+      </div><!-- /.blog-post -->
+
+      <br><br>
+
+
+      <nav class="blog-pagination">
+        <a class="btn btn-outline-primary" href="{{ url_for('blogs') }}">Newer</a>
+        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Older</a>
+      </nav>
+
+    </div><!-- /.blog-main -->
+
+
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">This section contains a collection of our blogs on applications of <em>ML & AI</em>  to industry,
+          current trends and expectations for the near future.</p>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Current blogs</h4>
+        <ol class="list-unstyled mb-0">
+          <li><a href="{{ url_for('blogs') }}">New blogs</a></li>
+        </ol>
+      </div>
+
+      <!-- <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div> -->
+
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+
+{% endblock %}

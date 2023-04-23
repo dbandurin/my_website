@@ -1,9 +1,10 @@
 from flask import Flask, request, render_template, redirect, url_for
 
+from flask_bootstrap import Bootstrap
+
 from flask_wtf import FlaskForm
 from wtforms import StringField, validators, PasswordField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Email
-from flask_bootstrap import Bootstrap
 import email_validator
 from flask_mail import Mail, Message
 
@@ -17,6 +18,7 @@ class contactForm(FlaskForm):
     subject = StringField("Subject",validators = [DataRequired()])
     message = TextAreaField("Message",validators = [DataRequired()])
     submit = SubmitField(label="Submit")
+
 
 mail = Mail()
 app.config["MAIL_SERVER"] = "smtp.gmail.com"
@@ -102,6 +104,11 @@ def dashboards():
 @app.route("/blogs", methods=['GET', 'POST'])
 def blogs():
     return render_template('blogs.html')
+
+@app.route("/blogs_archive", methods=['GET', 'POST'])
+def blogs_archive():
+    return render_template('blogs_archive.html')
+
 
 @app.route("/about_us", methods=['GET', 'POST'])
 def about_us():
